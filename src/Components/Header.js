@@ -6,8 +6,6 @@ class Header extends Component {
 
     render = (props) => {
 
-        //const image1 = require('../Images/img-01.jpg')
-
         if (this.props.data) {
             // var name = this.props.data.name;
             // var occupation = this.props.data.occupation;
@@ -20,7 +18,10 @@ class Header extends Component {
 
         const appbarStyle = {
             alignItems: 'center',
-            backgroundColor: '#333333',
+            // backgroundColor: '#333333',
+            // backgroundColor: '#12232E',
+            // backgroundColor: '#203647',
+            backgroundColor: '#FFDF6C',
             width: '-moz-available'
         }
 
@@ -37,7 +38,8 @@ class Header extends Component {
             padding: '8px 13px',
             textDecoration: 'none',
             textAlign: 'left',
-            color: '#ffff',
+            // color: '#ffff',
+            color: 'black',
             letterSpacing: '2px',
             transition: 'color .2s ease-in-out'
         }
