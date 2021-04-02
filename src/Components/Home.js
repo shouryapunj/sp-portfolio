@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-// import image1 from '../Images/img-03.jpg'
+import image1 from '../Images/img-04.jpg'
 // import me from '../Images/Me.jpeg'
 import ReactTypingEffect from 'react-typing-effect'
 
@@ -15,8 +15,9 @@ class Home extends Component {
 
     render = () => {
         return (
-            <div className="home">
-                <div className="" style={{ backgroundColor: 'black', height: '600px'}}>
+            <div className="home" style={{ position: 'relative'}}>
+                {/* <img alt="img-01" src={`${image1}`} style={{ width: '-moz-available', height: '800px', overflow: 'hidden' }} /> */}
+                <div className="" style={{ backgroundImage: `url(${image1})`, height: '600px', backgroundPosition: 'bottom'}}>
                     
                     <div className="" style={{ position: 'relative' }}>
                         {/* <img alt="me" src={`${me}`} style={{ position: 'absolute', left: '100px', top: '70px', overflow: 'hidden', height:"300px", width:"260px", borderRadius: '100%', margin: '0 auto' }} /> */}
@@ -32,7 +33,7 @@ class Home extends Component {
                         </div>
                         {/* <a href={this.state.linkedIn}><LinkedInIcon></LinkedInIcon></a> */}
                     </div>
-                    {/* <img alt="img-01" src={`${image1}`} style={{ width: '-moz-available', height: '800px', overflow: 'hidden' }} /> */}
+                    
                 </div>
                 <div className="container" style={{ backgroundColor: '#000000', maxWidth: '1020px' }}>
                     <div className="row">
