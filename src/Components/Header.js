@@ -1,17 +1,13 @@
 import React, { Component } from 'react'
-import { AppBar, Container, Link, Toolbar } from '@material-ui/core'
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import { AppBar, Link, Toolbar } from '@material-ui/core'
 
 class Header extends Component {
 
-    constructor(props) {
-        super(props)
-        this.state = {
-            linkedIn: "https://www.linkedin.com/in/shourya-punj-231a9a149/"
-        }
-    }
 
     render = (props) => {
+
+        //const image1 = require('../Images/img-01.jpg')
+
         if (this.props.data) {
             // var name = this.props.data.name;
             // var occupation = this.props.data.occupation;
@@ -22,17 +18,18 @@ class Header extends Component {
             // })
         }
 
-        var appbarStyle = {
+        const appbarStyle = {
             alignItems: 'center',
-            backgroundColor: '#333333'
+            backgroundColor: '#333333',
+            width: '-moz-available'
         }
 
-        var toolbarStyle = {
+        const toolbarStyle = {
             height: '48px',
-            width: 'auto',
+            // width: 'auto',
         }
 
-        var headerLinkStyle = {
+        const headerLinkStyle = {
             display: 'inline-block',
             font: '14px opensans-bold',
             lineHeight: '32px',
@@ -45,11 +42,8 @@ class Header extends Component {
             transition: 'color .2s ease-in-out'
         }
 
-        const image1 = `require(${'../Images/img-01.png'})`
-        //const image1 = `url(${'../Images/img-01.png'})`
-
         return (
-            <div className="header">
+            <div className="">
                 <AppBar position="sticky" style={appbarStyle}>
                     <Toolbar style={toolbarStyle}>
                         <Link component="button" style={headerLinkStyle}>HOME</Link>
@@ -58,19 +52,7 @@ class Header extends Component {
                         <Link component="button" style={headerLinkStyle}>WORKS</Link>
                         <Link component="button" style={headerLinkStyle}>CONTACT</Link>
                     </Toolbar>
-                </AppBar>
-
-                <Container style={{ backgroundImage: image1, height: '600px', padding: '10px 10px' }}>
-                    <p>
-                        <h3>Hi! I'm Shourya</h3>
-                        <span>Based in New Jersey, I'm pursuing a Master's in Computer Science
-                        and I'm graduating in May 2021.
-                        </span>
-                    </p>
-
-                    <a href={this.state.linkedIn}><LinkedInIcon></LinkedInIcon></a>
-                </Container>
-
+                </AppBar>    
             </div>
         )
     }
