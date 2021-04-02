@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import { AppBar, Link, Toolbar } from '@material-ui/core'
+import { Link as L } from 'react-scroll'
+
 
 class Header extends Component {
-
 
     render = (props) => {
 
@@ -17,12 +18,14 @@ class Header extends Component {
         }
 
         const appbarStyle = {
+            display: 'flex',
             alignItems: 'center',
             // backgroundColor: '#333333',
             // backgroundColor: '#12232E',
             // backgroundColor: '#203647',
             backgroundColor: '#FFDF6C',
-            width: '-moz-available'
+            width: '-moz-available',
+            position: 'fixed'
         }
 
         const toolbarStyle = {
@@ -45,16 +48,26 @@ class Header extends Component {
         }
 
         return (
-            <div className="">
-                <AppBar position="sticky" style={appbarStyle}>
+            <div id="Header" className="">
+                <AppBar style={appbarStyle}>
                     <Toolbar style={toolbarStyle}>
-                        <Link component="button" style={headerLinkStyle}>HOME</Link>
-                        <Link component="button" style={headerLinkStyle}>ABOUT</Link>
-                        <Link component="button" style={headerLinkStyle}>RESUME</Link>
-                        <Link component="button" style={headerLinkStyle}>WORKS</Link>
-                        <Link component="button" style={headerLinkStyle}>CONTACT</Link>
+                        <Link component="button" style={headerLinkStyle}>
+                            <L activeClass="active" to="Home" spy={true} smooth={true}>HOME</L>
+                        </Link>
+                        <Link component="button" style={headerLinkStyle}>
+                            <L to="About" spy={true} smooth={true}>ABOUT</L>
+                        </Link>
+                        <Link component="button" style={headerLinkStyle}>
+                            <L to="Resume" spy={true} smooth={true}>RESUME</L>
+                        </Link>
+                        <Link component="button" style={headerLinkStyle}>
+                            <L to="Works" spy={true} smooth={true}>WORKS</L>
+                        </Link>
+                        <Link component="button" style={headerLinkStyle}>
+                            <L to="Contact" spy={true} smooth={true}>CONTACT</L>
+                        </Link>
                     </Toolbar>
-                </AppBar>    
+                </AppBar>
             </div>
         )
     }

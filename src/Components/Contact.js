@@ -8,14 +8,14 @@ class Contact extends Component {
 
     render = () => {
         return (
-            <div className="container" style={{ textAlign: 'left', backgroundColor: '#000524', color: 'white', height: '460px', padding: '70px 70px' }}>
+            <div id="Contact" className="container" style={{ font: '15px opensans-bold', textAlign: 'left', backgroundColor: '#000524', color: 'white', height: '460px', padding: '70px 70px' }}>
                 <u><h4>CONTACT DETAILS</h4></u>
                 <br></br>
                 <span>
-                    <HomeIcon></HomeIcon>&nbsp;&nbsp;&nbsp;503 N 5th St, 
-                    <br></br>&emsp;&emsp;&nbsp;Apt 1, Harrison, 
-                    <br></br>&emsp;&emsp;&nbsp;New Jersey
-                    <br></br>&emsp;&emsp;&nbsp;USA 07029
+                    <HomeIcon></HomeIcon>&nbsp;503 N 5th St, 
+                    <br></br>&emsp;&emsp;&nbsp;&nbsp;Apt 1, Harrison, 
+                    <br></br>&emsp;&emsp;&nbsp;&nbsp;New Jersey
+                    <br></br>&emsp;&emsp;&nbsp;&nbsp;USA 07029
                     <br></br><br></br>
                     <EmailIcon></EmailIcon>&emsp;shouryapunj93@gmail.com
                     <br></br><br></br>
