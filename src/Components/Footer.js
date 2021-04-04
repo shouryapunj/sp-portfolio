@@ -18,35 +18,27 @@ class Footer extends Component {
 
     render = () => {
         return (
-            <div className="container-fluid" style={{ height: '300px', backgroundColor: 'black', color: 'white' }}>
-                <div className="container">
-                    <div className="row" style={{ alignItems: 'center', padding: '80px 20px' }}>
-                        <div className="col-sm-3">
-                            <a href={this.state.linkedIn} style={{ color: 'white' }}>
-                                <LinkedInIcon style={{ scale: '1.5' }}></LinkedInIcon><br></br><br></br>
-                                <h6>LinkedIn</h6>
-                            </a>
-                        </div>
-                        <div className="col-sm-3">
-                            <a href={this.state.github} style={{ color: 'white' }}>
-                                <GithubIcon style={{ scale: '1.5' }}></GithubIcon><br></br><br></br>
-                                <h6>Github</h6>
-                            </a>
-                        </div>
-                        <div className="col-sm-3">
-                            <a href={this.state.gmail} style={{ color: 'white' }}>
-                                <GamilIcon style={{ scale: '1.5' }}></GamilIcon><br></br><br></br>
-                                <h6>Gmail</h6>
-                            </a>
-                        </div>
-                        <div className="col-sm-3">
-                            <a href={this.state.instagram} style={{ color: 'white' }}>
-                                <InstagramIcon style={{ scale: '1.5' }}></InstagramIcon><br></br><br></br>
-                                <h6>Instagram</h6>
-                            </a>
-                        </div>
+            <div className="" style={{ position: 'relative', height: '500px' }}>
+                <div className="container" style={{   position: 'fixed', bottom: '0px', left: '0px', right: '0px',}}>
+                    <div className="row" style={{ backgroundColor: 'black', justifyContent: 'center', paddingTop: '10px', paddingBottom: '10px' }}>
+                        <a href={this.state.linkedIn} style={{ color: 'white', paddingRight: '30px' }}>
+                            <LinkedInIcon style={{ scale: '1' }}></LinkedInIcon><br></br>
+                            LinkedIn
+                        </a>
+                        <a href={this.state.github} style={{ color: 'white', paddingRight: '30px' }}>
+                            <GithubIcon style={{ scale: '1' }}></GithubIcon><br></br>
+                            Github
+                        </a>
+                        <a href={this.state.gmail} style={{ color: 'white', paddingRight: '30px' }}>
+                            <GamilIcon style={{ scale: '1' }}></GamilIcon><br></br>
+                            Gmail
+                        </a>
+                        <a href={this.state.instagram} style={{ color: 'white', paddingRight: '30px' }}>
+                            <InstagramIcon style={{ scale: '1' }}></InstagramIcon><br></br>
+                            Instagram
+                        </a>
                     </div>
-                </div >
+                </div>
             </div >
         )
     }

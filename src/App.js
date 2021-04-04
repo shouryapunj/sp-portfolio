@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Header from './Components/Header';
 import Home from './Components/Home';
-import Footer from './Components/Footer';
+// import Footer from './Components/Footer';
 import './App.css';
 import About from './Components/About';
 import Contact from './Components/Contact';
@@ -26,7 +26,7 @@ class App extends Component {
         <Contact data={this.state.resumeData.main} />
         <Resume data={this.state.resumeData.main} />
         <Work data={this.state.resumeData.main} />
-        <Footer data={this.state.resumeData.main} />
+        {/* <Footer data={this.state.resumeData.main} /> */}
       </div>
     );
   }

@@ -56,8 +56,8 @@ class Resume extends Component {
                 <br></br>
 
                 <div className="row">
-                    <div className="col-sm-3"></div>
-                    <div className="col-sm-9">
+                    <div className="col-lg-3"></div>
+                    <div className="col-lg-9">
                         <h5>Birla Institute of Technology and Science</h5>
                         <span>M.Sc (Hons) Mathematics and B.E (Hons) Electrical and Electronics&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;August 2013 - May 2018</span>
                         <br></br><br></br>
@@ -89,8 +89,8 @@ class Resume extends Component {
                 </div>
                 <br></br><br></br><br></br><br></br>
                 <div className="row">
-                    <div className="col-sm-3"><strong>TECHNICAL SKILLS</strong></div>
-                    <div className="col-sm-1" style={{ textAlign: 'center' }}>
+                    <div className="col-lg-3"><strong>TECHNICAL SKILLS</strong></div>
+                    <div className="col-lg-1" style={{ textAlign: 'center' }}>
                         <span>
                             <img alt="Java" src={`${javaIcon}`}></img><br></br>
                             <h6>Java</h6>
