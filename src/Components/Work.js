@@ -11,7 +11,7 @@ class Work extends Component {
                 <div className="row">
                     <div className="col-sm-3"><strong>ZS Associates</strong><br></br>July 2018 - July 2019</div>
                     <div className="col-sm-9" style={{textAlign: 'justify'}}>
-                        <h5>Business Technology Analyst</h5>
+                        <h5>Software Engineer - Data</h5>
                         <span>
                             <li>Created the cloud-based data warehousing solution for commercial analytics for Australia based client</li>
                             <li>Primarily worked as ETL developer creating Postgresql queries on AWS cloud databases such as redshift, rds</li>
